@@ -9,14 +9,15 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: 100px;
 }
 
 body {
+ background: linear-gradient(180deg,#013e6a, #43d1ff, #013e6a, #419ad6, #01186a);
  font-family: Arial, Helvetica, sans-serif;
- line-height: 1.5;
+ line-height: 1.5; 
  color: var(--text);
  min-height: 100vh;
 }
@@ -27,10 +28,6 @@ p {
  margin-block-end: 1em;
 }
 
-header{
-  display: grid;
-}
-
 .avatar {
   border-radius: 999px;
   width: 100%;
@@ -38,19 +35,13 @@ header{
 }
 
 .header-container{
-  background-color: rgb(6, 150, 240);
   display: grid;
   grid-template-columns: 250px 1fr 2fr;
-  color:var(--primary);
+  color: var(--secondary);
   align-items: center; 
   gap: 15em;
 }
  
-.main{
-  display: grid;
-  background-color: lightskyblue;
-}
-
 #Profil {
   display: grid;
   grid-template-columns: repeat(0, 1fr);
@@ -59,13 +50,22 @@ header{
   padding: 20px;
 }
 
+#Profil h2{
+  color: var(--secondary);
+}
+
 .Info {
+color: var(--secondary);
 display: flex;
 align-items: center;
 justify-content: center;
 width: 100%;
 gap: 80px;
 padding: 5px;
+}
+
+li{
+  color: var(--primary);
 }
 
 .projets-grid {
@@ -81,6 +81,7 @@ padding: 20px;
 
 #projets h2 {
 text-align: center;
+color: var(--secondary);
 }
 
 .project-card {
@@ -94,8 +95,7 @@ text-align: center;
 }
 
 #contact {
-  background-color: rgb(6, 150, 240);
-  color: var(--primary);
+  color: var(--secondary);
   text-align: center;
   font-size: 2rem;  
   width: 100%;
@@ -105,6 +105,13 @@ text-align: center;
 
 
 @media (max-width: 900px){
+
+
+
+
+
+
+  
    
 }
 
